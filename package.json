@@ -1,0 +1,40 @@
+{
+  "name": "game-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:server": "cd sources/server && tsc",
+    "build:client": "cd sources/client && tsc",
+    "build": "npm run build:server && npm run build:client",
+    "watch:server": "npm run build:server -- --watch",
+    "watch:client": "npm run build:client -- --watch",
+    "start": "node build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itmo-avol/game-server.git"
+  },
+  "keywords": [
+    "game",
+    "server",
+    "express"
+  ],
+  "author": "Andrey Avol Volynkin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/itmo-avol/game-server/issues"
+  },
+  "homepage": "https://github.com/itmo-avol/game-server#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.3",
+    "@types/node": "^13.9.0",
+    "@types/ws": "^7.2.2",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "ws": "^7.2.1"
+  }
+}
