@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css">
+	<title>Таймлайн</title>
+</head>
+<body>
+	<div class="game-table">
+		<div class="toolbar">
+			<main class="waiting">
+				<h2>Подождите подключения следующего игрока</h2>
+			</main>
+			<main class="game" hidden>
+				<h2>Ход противника</h2>
+			</main>
+			<main class="result" hidden>
+				<h2>Игра закончена</h2>
+				<button type="button" class="restart">Перезапустить</button>
+			</main>
+		</div>
+		
+		<div class="deck">
+		</div>
+		<div class="player-hud">
+			<div class="deck-element">
+				<img src="images/deck.png" alt="Колода" class="deck">
+			</div>
+			<div class="hand"></div>
+		</div>
+	</div>
+	<script type="module" src="scripts/index.js"></script>
+</body>
+</html>
